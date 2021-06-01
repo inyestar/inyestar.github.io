@@ -6,5 +6,5 @@ url: "https://inyestar.github.io" # the base hostname & protocol for your site, 
 
 # Theme
 remote_theme: pmarsceill/just-the-docs
-color_scheme: "light"
+color_scheme: nil
 search_enabled: true
