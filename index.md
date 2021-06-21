@@ -6,5 +6,8 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 ---
 
-### test
-test
+## Hello, this is Inyestar!
+
+- A three years experienced Java engineer in web development
+- made an anti spam solution and fought against anonymous spammers for 2 years ;)
+- Currently very enthusiastic for figuring how Java and Javascript work, Let's dig in!
