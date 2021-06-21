@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Color
+title: Type Coercion
 parent: Javascript
 ---
 
