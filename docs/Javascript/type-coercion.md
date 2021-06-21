@@ -1,3 +1,9 @@
+---
+layout: default
+title: Color
+parent: Javascript
+---
+
 # Type Coercion
 
 날짜: 2021년 2월 09일
