@@ -6,9 +6,9 @@ parent: Javascript
 
 # Equal operator
 
-날짜: 2021년 3월 05일
-출처: https://www.codementor.io/javascript/tutorial/double-equals-and-coercion-in-javascript
-태그: javascript
+| 날짜 | 2021년 3월 05일 |
+|:----------|:-------------------------------------|
+| 출처 | https://www.codementor.io/javascript/tutorial/double-equals-and-coercion-in-javascript |
 
 ## Double Equals (Loose Equality)
 
