@@ -6,9 +6,9 @@ parent: Javascript
 
 # Type Coercion
 
-날짜: 2021년 2월 09일
-출처: https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/
-태그: javascript
+| 날짜 | 2021년 2월 09일 |
+|:----------|:-------------------------------------|
+| 출처 | https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/|
 
 - 정의
 
