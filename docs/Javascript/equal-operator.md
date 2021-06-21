@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Color
+title: Equal Operator
 parent: Javascript
 ---
 
