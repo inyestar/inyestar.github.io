@@ -5,9 +5,9 @@ parent: Java
 ---
 # JVM
 
-날짜: 2021년 3월 03일
-출처: https://www.freecodecamp.org/news/jvm-tutorial-java-virtual-machine-architecture-explained-for-beginners/
-태그: java
+| 날짜 | 2021년 3월 03일 |
+|:----------|:-------------------------------------|
+| 출처 | https://www.freecodecamp.org/news/jvm-tutorial-java-virtual-machine-architecture-explained-for-beginners/ |
 
 ## * Hypervisor
 
