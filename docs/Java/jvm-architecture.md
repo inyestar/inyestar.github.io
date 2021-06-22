@@ -9,7 +9,7 @@ parent: Java
 |:----------|:-------------------------------------|
 | 출처 | https://www.freecodecamp.org/news/jvm-tutorial-java-virtual-machine-architecture-explained-for-beginners/ |
 
-## * Hypervisor
+## Hypervisor
 
 - 가상 머신을 생성하고 구동하는 소프트웨어로 Virtual Machine Monitor라고도 불린다.
 - 물리 하드웨어를 호스트 머신, VM을 게스트 머신이라고 칭한다.
@@ -20,10 +20,10 @@ parent: Java
     네이티브 하이퍼바이저라고 불리며 호스트의 하드웨어에서 직접 구동되어 게스트 운영체제를 관리하는 방식으로 주로 데이터 센터에서 사용된다. (vSphere, Xen)
     - 유형2
     호스트 하이퍼바이저라고 불리며 기존의 운영체제에서 스프트웨어나 애플리케이션 레이어로 구동되며 VM에 필요한 리소스는 호스트 운영 체제에 따라 예약된 후 실행된다.(Workstation, VirtualBox)
-```
-자바는 컴파일 언어인가 인터프린터 언어인가?
-자바는 작성된 코드를 바이트 코드로 컴파일하고, JVM이 바이트코드를 인터프리터한다.
-```
+
+## Java
+- 자바는 작성된 코드를 바이트 코드로 컴파일하고, JVM이 바이트코드를 인터프리터한다.
+
 ## Class Loader
 
 - 컴파일 된 클래스가 사용될 때 메인 메모리에 적재 시키는 역할
