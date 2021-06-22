@@ -11,14 +11,10 @@ parent: Javascript
 | 출처 | https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/|
 
 - 정의
-
-    coercion의 사전적 정의는 '강제'
-
-    어떤 타입을 다른 타입으로 변환하는 프로세스
-
-    예) string → number, object → boolean 등
-
-    마음속으로 '강제 형변환'이라고 명명하고 기사를 읽고 있음..^^;
+    - coercion의 사전적 정의는 '강제'
+    - 어떤 타입을 다른 타입으로 변환하는 프로세스
+      예) string → number, object → boolean 등
+    - 마음속으로 '강제 형변환'이라고 명명하고 기사를 읽고 있음..^^;
 
 - 명시적 vs 암시적 변환
     - 명시적 변환
@@ -48,8 +44,7 @@ parent: Javascript
 
 - 변환 유형
 
-    기본형과 object(변환 로직은 다르지만)는 아래 세 가지로만 변환이 가능하다.
-
+    - 기본형과 object(변환 로직은 다르지만)는 아래 세 가지로만 변환이 가능하다.
     - String 변환
     - 명시적 : String(값)
     - 암시적 : 피연산자인 문자열과 '+' 연산자가 만날 경우 발생함
