@@ -20,10 +20,10 @@ parent: Java
     네이티브 하이퍼바이저라고 불리며 호스트의 하드웨어에서 직접 구동되어 게스트 운영체제를 관리하는 방식으로 주로 데이터 센터에서 사용된다. (vSphere, Xen)
     - 유형2
     호스트 하이퍼바이저라고 불리며 기존의 운영체제에서 스프트웨어나 애플리케이션 레이어로 구동되며 VM에 필요한 리소스는 호스트 운영 체제에 따라 예약된 후 실행된다.(Workstation, VirtualBox)
-
+```
 자바는 컴파일 언어인가 인터프린터 언어인가?
 자바는 작성된 코드를 바이트 코드로 컴파일하고, JVM이 바이트코드를 인터프리터한다.
-
+```
 ## Class Loader
 
 - 컴파일 된 클래스가 사용될 때 메인 메모리에 적재 시키는 역할
@@ -59,27 +59,28 @@ parent: Java
 - Linking : 클래스가 메모리에 적재된 후 링킹 프로세스를 거치게 된다. 클래스나 인터페이스를 연결하는 작업에는 프로그램의 다른 요소들과 종송석을 함께 결합하는 작업도 포함되어 있다.
     - Verification
     일련의 제약이나 규칙을 통해 클래스 파일의 구조적인 정확도를 확인한다. verification이 실패할 경우 VerifyException을 던진다.
-
+         ```
          Java 8이 설치된 시스템에서  Java 11로 컴파일된 코드를 구동할 경우 verification은 실패한다.
-
+         ```
     - Preparation
     클래스나 인터페이스의 static 필드을 위한 메모리 공간을 할당하고 기본 값으로 초기화한다.
-
+        ```java
         private static final boolean enabled = true; 
+        ```
         위 와 같은 선언문이 클래스에 있을 경우, JVM은 enabled 변수를 위한 메모리를 할당하고 변수의 기본값으로 boolean의 기본값인 false를 세팅한다. 
-
+        
     - Resolution
     Symbolic 참조를 Runtime Constant Pool에 있는 직접 참조로 대체한다.
-
+        ```
         다른 클래스 혹은 다른 클래스에 있는 상수 변수에 대한 참조가 있을 경우 이 단계에서 그들의 실제 참조로 변경된다.
-
+        ```
 - Initialization : 클래스나 인터페이스의 초기화 메소드를 실행한다. 클래스의 생성자를 호출하거나 static 블락을 실행하거나 모든 상수 변수에 값을 할당하는 방식으로 작업이 수행될 수 있다. 클래스 로딩의 가장 마지막 단계이다.
-
+    ```java
     private static final boolean enabled = true; 
+    ```
     Preparation 단계에서 enabled 변수는 false로 값이 세팅되었다. 이후 Initialization 단계에서 enabled 변수에 실제 값인 true가 세팅된다.
-
     JVM은 멀티 쓰레딩을 지원하기 때문에 여러 쓰레드가 동시에 같은 클래스를 초기화하려고 할 수도 있으므로 개발자는 이 부분을 염두해야 한다.
-
+    
 ## Runtime Data Area
 
 - Method Area
@@ -111,9 +112,7 @@ parent: Java
         Student student = new Student('sam', 100);
         ```
 
-    - 가상 머신이 시작될 때 힙 영역은 생성되며 JVM 당 하나의 힙 영역만이 존재한다.
-
-메소드 영역와 힙 영역은 다중 쓰레드에서 공유하는 메모리 공간이므로 이곳에 저장되는 데이터는 thread safe가 보장되지 않는다.
+    - 가상 머신이 시작될 때 힙 영역은 생성되며 JVM 당 하나의 힙 영역만이 존재한다. 메소드 영역와 힙 영역은 다중 쓰레드에서 공유하는 메모리 공간이므로 이곳에 저장되는 데이터는 thread safe가 보장되지 않는다.
 
 - Stack Area
     - JVM에서 새로운 쓰레드가 생성되면 새로운 런타임 스택도 동시에 생성된다. 지역 변수나 메소드 호출과 부분적인 리턴 값들이 스택 영역에 저장된다.
