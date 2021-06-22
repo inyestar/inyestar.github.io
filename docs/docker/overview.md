@@ -27,7 +27,7 @@ parent: Docker
 - **예시**
 
     ```bash
-    $ docker run -i -t ubunt /bin/bash
+    # docker run -i -t ubunt /bin/bash
     ```
 
     1. ubunt 이미지가 로컬 저장소에 없으면, 설정된 레지스트리로부터 이미지를 가져온다.
