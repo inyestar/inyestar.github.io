@@ -15,7 +15,7 @@ parent: Docker
     - centos-extras 레포지토리 활성화
 
     ```bash
-    $ yum repolist | grep extras
+    # yum repolist | grep extras
     ```
 
     - overay2 스토리지 드라이버 추천 (not followed)
@@ -24,51 +24,51 @@ parent: Docker
     - yum-config-manager 사용을 위해 yum-utils 설치
 
     ```bash
-    $ yum install -y yum-utils
-    $ yum-config-manager --version
+    # yum install -y yum-utils
+    # yum-config-manager --version
     ```
 
     - docker 레포지토리 추가
 
     ```bash
-    $ yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-    $ ls /etc/yum.repos.d/docker-ce.repo
+    # yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    # ls /etc/yum.repos.d/docker-ce.repo
     ```
 
     - docker 엔진 설치 (docker 그룹도 자동 추가됨)
 
     ```bash
-    $ yum install -y docker-ce docker-ce-cli containerd.io
-    $ docker version
-    $ cat /etc/group | grep docker
+    # yum install -y docker-ce docker-ce-cli containerd.io
+    # docker version
+    # cat /etc/group | grep docker
     ```
 
     - docker 시작 후 image 실행
 
     ```bash
-    $ systemctl start docker
-    $ ps -ef | grep docker
-    $ docker run hello-world
+    # systemctl start docker
+    # ps -ef | grep docker
+    # docker run hello-world
     ```
 
 - **Docker 엔진 삭제**
     - Docker 엔진, CLI, Containerd 패키지 삭제
 
     ```bash
-    $ yum remove docker-ce docker-ce-cli containerd.io
+    # yum remove docker-ce docker-ce-cli containerd.io
     ```
 
     - 이미지, 컨테이너, 볼륨 파일은 수동으로 삭제 필요
 
     ```bash
-    $ rm -rf /var/lib/docker
+    # rm -rf /var/lib/docker
     ```
 
 - **트러블슈팅**
     - Unable to find image 'hello-world:latest' locally
 
     ```bash
-    $ docker login --username ${dockerID}
+    # docker login --username ${dockerID}
     ```
 
     - Unauthorized: incorrect username or password
