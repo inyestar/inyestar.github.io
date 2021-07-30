@@ -11,3 +11,6 @@ permalink: /
 - A three years experienced Java engineer in web development
 - made an anti spam solution and fought against anonymous spammers for 2 years ;)
 - Currently very enthusiastic for figuring how Java and Javascript work, Let's dig in!
+
+## What I have done and been doing!
+<img src="./img/history.png" width="70%" height="70%" />
