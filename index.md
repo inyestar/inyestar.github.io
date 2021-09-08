@@ -11,7 +11,6 @@ permalink: /
 - made an anti-spam solution and fought against anonymous spammers for a half and two years ;)
 - Currently very enthusiastic for figuring how Java and Javascript work, Let's dig in!
 
-# What I have done and been doing!
 ## Machine Learning for Computer Security
   - EDUCATION
   - 2021.05 - now
