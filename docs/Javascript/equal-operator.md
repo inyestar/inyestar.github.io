@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Equal Operator
-parent: javascript
+parent: Javascript
 ---
 
 # Equal operator

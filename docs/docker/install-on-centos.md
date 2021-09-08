@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Install On CentOS
-parent: docker
+parent: Docker
 ---
 
 # Install on CentOS

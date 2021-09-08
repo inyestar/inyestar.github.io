@@ -1,6 +1,6 @@
 ---
 layout: default
-title: JVM Architecture
+title: Java IO
 parent: Java
 ---
 # Java IO

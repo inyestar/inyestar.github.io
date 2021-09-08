@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Overview
-parent: docker
+parent: Docker
 ---
 
 # Overview

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Type Coercion
-parent: javascript
+parent: Javascript
 ---
 
 # Type Coercion

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: HTTP Overview
-parent: http
+parent: HTTP
 ---
 
 # HTTP Overview
