@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Introduction
-parent: kafka
+parent: Kafka
 ---
 
 # Introduction

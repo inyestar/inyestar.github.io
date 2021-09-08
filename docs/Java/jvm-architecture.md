@@ -1,7 +1,7 @@
 ---
 layout: default
 title: JVM Architecture
-parent: java
+parent: Java
 ---
 # JVM
 
