@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Equal Operator
-parent: Javascript
+parent: javascript
 ---
 
 # Equal operator
 
-| 날짜 | 2021년 3월 05일 |
+| 날짜 | 2021년 03월 05일 |
 |:----------|:-------------------------------------|
 | 출처 | https://www.codementor.io/javascript/tutorial/double-equals-and-coercion-in-javascript |
 

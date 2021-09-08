@@ -1,11 +1,11 @@
 ---
 layout: default
 title: JVM Architecture
-parent: Java
+parent: java
 ---
 # JVM
 
-| 날짜 | 2021년 3월 03일 |
+| 날짜 | 2021년 03월 03일 |
 |:----------|:-------------------------------------|
 | 출처 | https://www.freecodecamp.org/news/jvm-tutorial-java-virtual-machine-architecture-explained-for-beginners/ |
 
@@ -34,7 +34,7 @@ parent: Java
 
         ```java
         System.out.println(ArrayList.class.getClassLoader());
-        >> null 
+        >> null
         // (!) Bootstrap 클래스 로더는 native 코드로 작성되어서 null로 나옴
         ```
 
@@ -65,10 +65,10 @@ parent: Java
     - Preparation
     클래스나 인터페이스의 static 필드을 위한 메모리 공간을 할당하고 기본 값으로 초기화한다.
         ```java
-        private static final boolean enabled = true; 
+        private static final boolean enabled = true;
         ```
-        위 와 같은 선언문이 클래스에 있을 경우, JVM은 enabled 변수를 위한 메모리를 할당하고 변수의 기본값으로 boolean의 기본값인 false를 세팅한다. 
-        
+        위 와 같은 선언문이 클래스에 있을 경우, JVM은 enabled 변수를 위한 메모리를 할당하고 변수의 기본값으로 boolean의 기본값인 false를 세팅한다.
+
     - Resolution
     Symbolic 참조를 Runtime Constant Pool에 있는 직접 참조로 대체한다.
         ```
@@ -76,11 +76,11 @@ parent: Java
         ```
 - Initialization : 클래스나 인터페이스의 초기화 메소드를 실행한다. 클래스의 생성자를 호출하거나 static 블락을 실행하거나 모든 상수 변수에 값을 할당하는 방식으로 작업이 수행될 수 있다. 클래스 로딩의 가장 마지막 단계이다.
     ```java
-    private static final boolean enabled = true; 
+    private static final boolean enabled = true;
     ```
     Preparation 단계에서 enabled 변수는 false로 값이 세팅되었다. 이후 Initialization 단계에서 enabled 변수에 실제 값인 true가 세팅된다.
     JVM은 멀티 쓰레딩을 지원하기 때문에 여러 쓰레드가 동시에 같은 클래스를 초기화하려고 할 수도 있으므로 개발자는 이 부분을 염두해야 한다.
-    
+
 ## Runtime Data Area
 
 - Method Area

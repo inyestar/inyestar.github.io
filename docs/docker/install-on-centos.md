@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Install On CentOS
-parent: Docker
+parent: docker
 ---
 
 # Install on CentOS
 
-| 날짜 | 2021년 1월 31일 |
+| 날짜 | 2021년 01월 31일 |
 |:----------|:-------------------------------------|
 | 출처 | https://docs.docker.com/engine/install/centos/ |
 

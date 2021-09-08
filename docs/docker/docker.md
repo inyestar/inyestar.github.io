@@ -3,7 +3,7 @@ layout: default
 title: Docker
 nav_order: 3
 has_children: true
-permalink: /docs/Docker
+permalink: /docs/docker
 ---
 
 # Docker

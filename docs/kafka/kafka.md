@@ -1,9 +1,9 @@
 ---
 layout: default
-title: SMTP
+title: Kafka
 nav_order: 3
 has_children: true
-permalink: /docs/smtp
+permalink: /docs/kafka
 ---
 
-# SMTP
+# Kafka
