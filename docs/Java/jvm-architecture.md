@@ -3,7 +3,7 @@ layout: default
 title: JVM Architecture
 parent: Java
 ---
-# JVM
+# JVM Architecture
 
 | 날짜 | 2021년 03월 03일 |
 |:----------|:-------------------------------------|

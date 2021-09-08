@@ -5,6 +5,7 @@ parent: Kafka
 ---
 
 # Introduction
+
 | 날짜 | 2021년 01월 31일 |
 |:----------|:-------------------------------------|
 | 출처 | https://kafka.apache.org/documentation |
