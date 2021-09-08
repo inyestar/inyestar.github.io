@@ -5,9 +5,9 @@ parent: Kafka
 ---
 
 # Introduction
-| 날짜 | 2021년 09월 08일 |
+| 날짜 | 2021년 01월 31일 |
 |:----------|:-------------------------------------|
-| 출처 | https://howtodoinjava.com/java/io/how-java-io-works-internally/ |
+| 출처 | https://kafka.apache.org/documentation |
 
 ### Event Streaming
 - 사람의 중추 신경계와 같은 역할
