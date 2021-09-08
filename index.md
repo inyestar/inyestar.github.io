@@ -12,12 +12,17 @@ permalink: /
 - Currently very enthusiastic for figuring how Java and Javascript work, Let's dig in!
 
 ## What I have done and been doing!
-- [EDUCATION] Machine Learning for Computer Security
-  * 2021.05 - now
-  * Linux, Cloud, Web/Network Security, Malware, Reversing, ML/DL
-- [EXPERIENCE] Anti-spam Software Development
-  * 2018.06 - 2020.10
-  * Java, Spring, JSP, Javascript, MariaDB, CentOS, ApacheTomcat
-- [EDUCATION] Java for Application Software
-  * 2017.11 - 2018.05
-  * Java, Spring, JSP, Android, JQuery, Oracle
+##### Machine Learning for Computer Security
+  - EDUCATION
+  - 2021.05 - now
+  - Linux, Cloud, Web/Network Security, Malware, Reversing, ML/DL
+
+##### Anti-spam Software Development
+  - EXPERIENCE
+  - 2018.06 - 2020.10
+  - Java, Spring, JSP, Javascript, MariaDB, CentOS, ApacheTomcat
+
+##### Java for Application Software
+  - EDUCATION
+  - 2017.11 - 2018.05
+  - Java, Spring, JSP, Android, JQuery, Oracle
