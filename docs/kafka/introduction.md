@@ -10,12 +10,12 @@ parent: Kafka
 |:----------|:-------------------------------------|
 | 출처 | https://kafka.apache.org/documentation |
 
-### Event Streaming
+## Event Streaming
 - 사람의 중추 신경계와 같은 역할
 - Stream 형태의 데이터를 실시간으로 캡쳐하는 방식
 - 데이터의 지속적인 흐름을 보장하여 'always-on'을 가능하게 함
 
-### Apache Kafka
+## Apache Kafka
 - 이벤트 스트리밍 플랫폼
 - 지속적으로 import/export할 수 있는 이벤트 스트림을 publish 하거나 subscribe할 수 있음
 - 원하는 기간만큼 안정적으로 이벤트 스트림을 저장할 수 있음
@@ -23,7 +23,7 @@ parent: Kafka
 - 서버와 클라이언트로 구성되어 있으며 TCP 네트워크 프로토콜로 통신함
 - 하나 이상의 서버가 클러스터 형태로 운영됨
 
-### Terminology
+## Terminology
 - Event : kafka에서 데이터 스트림 처리 시 사용하는 논리적 개념으로 key, value, timestamp, 기타 헤더 정보를 가지고 있음
 - Producer : kafka에 이벤트를 publish(write)하는 모든 클라이언트 애플리케이션
 - Consumer : Producer가 제공한 이벤트를 subscribe(read/process)하는 클라이언트 애플리케이션
@@ -32,7 +32,7 @@ parent: Kafka
 - Partition : 토픽이 분산되어 저장될 때 해당 위치(location)를 구분짓는 개념으로 같은 key를 가진 이벤트는 같은 파티션에 추가(append)됨
 ![Topic](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e76f5cd9-0a49-4142-a1f1-cab414ebe1b8/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210908%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210908T095154Z&X-Amz-Expires=86400&X-Amz-Signature=3859041224e1a04c5b33886db22a0bc47f57965a8aa1edda7df2de0514b56ff7&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
 
-### Quick Start
+## Quick Start
 - Pre-Requisites
   * docker
     ```bash
@@ -110,10 +110,10 @@ parent: Kafka
     $ sudo docker-compose up -d
   ```
 
-### Advanced
+## Advanced
 - zookeeper (TODO)
 
-### References
+## References
 [https://kafka.apache.org/documentation/#gettingStarted](https://kafka.apache.org/documentation/#gettingStarted)
 [https://docs.docker.com/engine/install/centos/](https://docs.docker.com/engine/install/centos/)
 [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
