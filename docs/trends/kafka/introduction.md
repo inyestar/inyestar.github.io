@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Introduction
-parent: Kafka
+parent: Trends/Kafka
 ---
 
 # Introduction

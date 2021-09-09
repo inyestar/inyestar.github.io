@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Kafka
+title: Trends
 nav_order: 3
 has_children: true
-permalink: /docs/kafka
+permalink: /docs/trends
 ---
 
-# Kafka
+# Trends
