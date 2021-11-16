@@ -9,24 +9,24 @@ parent: ALONE
 ## NOTE
 #### Jenkins
 - 언어 설정
-  💡 한국어 번역이 어설퍼서 영어로 변경하는 편이 좋음
-  1) jenkins 관리 > 플러그인 관리 > locale 플러그인 설치
-  2) jenkins 관리 > 환경설정 > locale의 Default Language > en_US 입력
-  3) Ignore browser preference and force this language to all users 체크
-  4) apply and save
+  - 💡 한국어 번역이 어설퍼서 영어로 변경하는 편이 좋음
+  - jenkins 관리 > 플러그인 관리 > locale 플러그인 설치
+  - jenkins 관리 > 환경설정 > locale의 Default Language > en_US 입력
+  - Ignore browser preference and force this language to all users 체크
+  - apply and save
 - maven 추가
-  💡 생성하지 않으면 mvn 찾지 못하여 build 실패
-  1) Manage Jenkins > Global Tool Configuration > Maven의 Maven installation 클릭
-  2) add maven 클릭
-  3) Name 입력
-  4) Version 선택
-  5) apply and save
+  - 💡 생성하지 않으면 mvn 찾지 못하여 build 실패
+  - Manage Jenkins > Global Tool Configuration > Maven의 Maven installation 클릭
+  - add maven 클릭
+  - Name 입력
+  - Version 선택
+  - apply and save
 - docker 연동
-  💡 docker registry를 등록할 때 host:port 형식으로 등록하지 않으면 이미지 push할 때 default로 접속함 (80이나 443도 마찬가지)
-  1) Manage Jenkins > Plugin manager > Available 탭 클릭
-  2) 검색 창에 docker 입력
-  3) Docker와 CloudBees Docker Build and Publish 플러그인 선택
-  4) 하단의 Install without restart 클릭
+  - 💡 docker registry를 등록할 때 host:port 형식으로 등록하지 않으면 이미지 push할 때 default로 접속함 (80이나 443도 마찬가지)
+  - Manage Jenkins > Plugin manager > Available 탭 클릭
+  - 검색 창에 docker 입력
+  - Docker와 CloudBees Docker Build and Publish 플러그인 선택
+  - 하단의 Install without restart 클릭
 
 ## PRACTICE
 - Docker Local Registry
