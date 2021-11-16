@@ -51,7 +51,7 @@ parent: ALONE
   # 등록된 repository
   $ ll /var/lib/docker/volumes/inminhub/_data/docker/registry/v2/repositories/
   ```
-- docker-compose로 전체 구성 (https://github.com/inminhouse/alone-ci-cd)
+- docker-compose로 전체 구성 [alone-ci-cd](https://github.com/inminhouse/alone-ci-cd)
 
 ## TROUBLESHOOTING
 ```console
