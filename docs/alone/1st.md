@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 1 Day
+title: 1st
 parent: ALONE
 ---
 
@@ -8,14 +8,14 @@ parent: ALONE
 
 ## NOTE
 - CI/CD
-  - Github Action을 쓸 경우 Docker Local Repository 사용 불가
-  - Jenkins 서버는 로컬에서 사용가능하니까 Local Repository 사용 가능
+  - Github Action을 쓸 경우 Docker Local Registry 사용 불가
+  - Jenkins 서버는 로컬에서 사용가능하니까 Local Registry 사용 가능
   - Steps
     - push to Github
     - mvn install in Jenkins
     - build docker image in Jenkins
     - push docker image to local Repository in Jenkins
-    - publish ??
+    - start docker container in Jenkins (maybe)
 
 ## PRACTICE
 - Jenkins
@@ -69,16 +69,6 @@ parent: ALONE
   # installation 진행
   ```
   💡 Docker안에 Docker가 왜 떠있어야 하는지 의문이다. 공식 문서에 의하면 docker-cli가 공식 jenkins 이미지에 포함되어 있지 않고 블루오션 플러그인을 사용하기 위해서라고 하는데 블루 오션이 뭔지 모르고 docker-cli가 왜 필요한지 모르겠다.
-- Docker Local Repository
-  ```bash
-  $ sudo docker run -d \
-        -p 5000:5000 \
-        --restart=always \
-        --name inminhub \
-        -v inminhub:/var/lib/registry \
-        --network jenkins
-        registry:2
-  ```
 
 ## REFERENCES
 - Jenkins
