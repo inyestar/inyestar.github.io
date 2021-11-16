@@ -7,7 +7,7 @@ parent: ALONE
 # 2021년 11월 15일
 
 ## NOTE
-- CI/CD
+#### CI/CD
   - Github Action을 쓸 경우 Docker Local Registry 사용 불가
   - Jenkins 서버는 로컬에서 사용가능하니까 Local Registry 사용 가능
   - Steps
