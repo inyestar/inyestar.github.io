@@ -57,7 +57,7 @@ parent: ALONE
 ```console
 temporarily enable Common Name matching with GODEBUG=x509ignoreCN=0
 ```
-- 원인 : golang 버전 올라가면서 wirdcard 인증서가 아닌 SAN 인증서를 만들어야 하는 것 같다. 허허 그게 모람
+- 원인 : golang 버전 올라가면서 wildcard 인증서가 아닌 SAN 인증서를 만들어야 하는 것 같다. 허허 그게 모람
 - 해결 : 임시 방편으로 Docker in Docker 환경변수로 GODEBUG=x509ignoreCN=0 사용 했다
 - ref : https://ikcoo.tistory.com/143
 
