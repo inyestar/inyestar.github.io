@@ -7,7 +7,7 @@ parent: ALONE
 # 2021년 11월 17일
 
 ## NOTE
-#### Messenger
+#### Message
 - Archictecture
   - Kafka : 메시지 브로커
   - Redis : 캐싱
