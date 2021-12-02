@@ -30,7 +30,6 @@ parent: Kafka
 - Broker : kafka 서버
 - Topic : 이벤트가 분류되는 형태로 파일시스템의 폴더와 유사한 개념이며 이벤트들은 이 폴더에 존재하게 됨
 - Partition : 토픽이 분산되어 저장될 때 해당 위치(location)를 구분짓는 개념으로 같은 key를 가진 이벤트는 같은 파티션에 추가(append)됨
-![Topic](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e76f5cd9-0a49-4142-a1f1-cab414ebe1b8/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210908%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210908T095154Z&X-Amz-Expires=86400&X-Amz-Signature=3859041224e1a04c5b33886db22a0bc47f57965a8aa1edda7df2de0514b56ff7&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
 
 ## Quick Start
 - Pre-Requisites
