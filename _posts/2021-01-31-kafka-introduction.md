@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Kafka Introduction
-tags: [test, sample]
+tags: [kafka, streaming]
 ---
 
-## Event Streaming
+### Event Streaming
 - 사람의 중추 신경계와 같은 역할
 - Stream 형태의 데이터를 실시간으로 캡쳐하는 방식
 - 데이터의 지속적인 흐름을 보장하여 'always-on'을 가능하게 함
 
-## Apache Kafka
+### Apache Kafka
 - 이벤트 스트리밍 플랫폼
 - 지속적으로 import/export할 수 있는 이벤트 스트림을 publish 하거나 subscribe할 수 있음
 - 원하는 기간만큼 안정적으로 이벤트 스트림을 저장할 수 있음
@@ -17,7 +17,7 @@ tags: [test, sample]
 - 서버와 클라이언트로 구성되어 있으며 TCP 네트워크 프로토콜로 통신함
 - 하나 이상의 서버가 클러스터 형태로 운영됨
 
-## Terminology
+### Terminology
 - Event : kafka에서 데이터 스트림 처리 시 사용하는 논리적 개념으로 key, value, timestamp, 기타 헤더 정보를 가지고 있음
 - Producer : kafka에 이벤트를 publish(write)하는 모든 클라이언트 애플리케이션
 - Consumer : Producer가 제공한 이벤트를 subscribe(read/process)하는 클라이언트 애플리케이션
@@ -25,10 +25,10 @@ tags: [test, sample]
 - Topic : 이벤트가 분류되는 형태로 파일시스템의 폴더와 유사한 개념이며 이벤트들은 이 폴더에 존재하게 됨
 - Partition : 토픽이 분산되어 저장될 때 해당 위치(location)를 구분짓는 개념으로 같은 key를 가진 이벤트는 같은 파티션에 추가(append)됨
 
-## Quick Start
+### Quick Start
 - Pre-Requisites
   * docker
-    ```bash
+    {% highlight bash %}
       # yum-utils 설치
       $ sudo yum install -y yum-utils
       # yum repolist에 docker용 추가
@@ -41,7 +41,7 @@ tags: [test, sample]
       $ sudo systemctl start docker
       # hello-world 이미지 실행
       $ sudo docker run hello-world
-    ```
+    {% endhighlight %}
   * docker-compose
     ```bash
       # github에서 os와 arch에 맞는 docker-compose 파일을 받아서 /usr/local/bin/docker-compose에 저장
