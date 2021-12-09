@@ -63,4 +63,4 @@ tags: [Javascript]
 8. 1번으로 돌아가 피연산자의 타입이 같으므로 0 === 0을 호출한다.
 
 ### References
-- https://www.codementor.io/javascript/tutorial/double-equals-and-coercion-in-javascript
+- [https://www.codementor.io/javascript/tutorial/double-equals-and-coercion-in-javascript](https://www.codementor.io/javascript/tutorial/double-equals-and-coercion-in-javascript)

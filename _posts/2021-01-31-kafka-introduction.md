@@ -108,9 +108,9 @@ tags: [kafka, streaming]
 - zookeeper (TODO)
 
 ### References
-- https://kafka.apache.org/documentation/#gettingStarted
-- https://docs.docker.com/engine/install/centos/
-- https://docs.docker.com/compose/install/
-- https://tecadmin.net/install-python-3-8-centos/
-- https://developer.confluent.io/get-started/python/#introduction
-- https://logdeveloper.github.io/python/python-mariadb-example/
+- [https://kafka.apache.org/documentation/#gettingStarted](https://kafka.apache.org/documentation/#gettingStarted)
+- [https://docs.docker.com/engine/install/centos/](https://docs.docker.com/engine/install/centos/)
+- [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
+- [https://tecadmin.net/install-python-3-8-centos/](https://tecadmin.net/install-python-3-8-centos/)
+- [https://developer.confluent.io/get-started/python/#introduction](https://developer.confluent.io/get-started/python/#introduction)
+- [https://logdeveloper.github.io/python/python-mariadb-example/](https://logdeveloper.github.io/python/python-mariadb-example/)
