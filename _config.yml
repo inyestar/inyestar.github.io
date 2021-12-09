@@ -6,7 +6,7 @@ remote_theme: rohanchandra/type-theme
 theme_settings:
   title: Inyestar
   # avatar: assets/img/avatar.png
-  avatar: _assets/img/avatar.png
+  avatar: img/avatar.png
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
   description: Inyestar Blog
