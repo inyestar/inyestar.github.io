@@ -1,14 +1,8 @@
 ---
-layout: default
-title: Introduction
-parent: Kafka
+layout: post
+title: Kafka Introduction
+tags: [test, sample]
 ---
-
-# Introduction
-
-| 날짜 | 2021년 01월 31일 |
-|:----------|:-------------------------------------|
-| 출처 | https://kafka.apache.org/documentation |
 
 ## Event Streaming
 - 사람의 중추 신경계와 같은 역할
@@ -113,9 +107,9 @@ parent: Kafka
 - zookeeper (TODO)
 
 ## References
-[https://kafka.apache.org/documentation/#gettingStarted](https://kafka.apache.org/documentation/#gettingStarted)
-[https://docs.docker.com/engine/install/centos/](https://docs.docker.com/engine/install/centos/)
-[https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
-[https://tecadmin.net/install-python-3-8-centos/](https://tecadmin.net/install-python-3-8-centos/)
-[https://developer.confluent.io/get-started/python/#introduction](https://developer.confluent.io/get-started/python/#introduction)
-[https://logdeveloper.github.io/python/python-mariadb-example/](https://logdeveloper.github.io/python/python-mariadb-example/)
+- https://kafka.apache.org/documentation/#gettingStarted
+- https://docs.docker.com/engine/install/centos/
+- https://docs.docker.com/compose/install/
+- https://tecadmin.net/install-python-3-8-centos/
+- https://developer.confluent.io/get-started/python/#introduction
+- https://logdeveloper.github.io/python/python-mariadb-example/
