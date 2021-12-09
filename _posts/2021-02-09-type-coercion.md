@@ -6,11 +6,12 @@ tags: [Javascript]
 
 ### 정의
 - coercion의 사전적 정의는 '강제'
-- 어떤 타입을 다른 타입으로 변환하는 프로세스<br/>
-  예) string → number, object → boolean 등
+- 어떤 타입을 다른 타입으로 변환하는 프로세스<br>
+&nbsp;예) string → number, object → boolean 등
 - 마음속으로 '강제 형변환'이라고 명명하고 기사를 읽고 있음..^^;
 <br>
 <br>
+
 ### 명시적 vs 암시적 변환
 #### 명시적 변환
 - 개발자가 의도를 가지고 형변환을 한 경우
@@ -33,7 +34,8 @@ tags: [Javascript]
   // hi
   {% endhighlight %}
 - '===' 으로 표현되는 연산자 사용할 경우 암시적 형변환은 발생하지 않는다.
-<br/>
+<br>
+<br>
 
 ### 변환 유형
 - 기본형과 object(변환 로직은 다르지만)는 아래 세 가지로만 변환이 가능하다.
@@ -47,8 +49,8 @@ tags: [Javascript]
   123 + '' // 암시적
   // "123"
   {% endhighlight %}
-- Symbol 타입은 명시적으로만 문자열로 변환이 가능하다.<br/>
-  예) String(Symbol('my symbol'))
+- Symbol 타입은 명시적으로만 문자열로 변환이 가능하다.<br>
+&nbsp;예) String(Symbol('my symbol'))
 
 #### Boolean 변환
 - 명시적 : Boolean(값)
@@ -96,6 +98,8 @@ tags: [Javascript]
   - null과 undefined에 == 연산자를 적용할 경우 Number 변환은 일어나지 않는다. <br>
     null은 undefined나 null로만 일치할 수 있기 때문이다.
   - NaN는 자기 자신 혹은 다른 어떤것이라도 일치하지 않는다.
+<br>
+<br>
 
 ### Object의 형변환
 - Object → 기본형 → final type
