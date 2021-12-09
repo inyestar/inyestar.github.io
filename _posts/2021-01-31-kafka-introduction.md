@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kafka Introduction
-tags: [kafka, streaming]
+tags: [Kafka]
 ---
 
 ### Event Streaming
