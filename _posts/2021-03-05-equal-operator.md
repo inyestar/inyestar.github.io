@@ -9,8 +9,8 @@ tags: [Javascript]
 - 타입이 같으면 === 연산자를 사용한다.
 
 ### Process
-1) 피연산자가 같은 타입인지 확인하고 같으면 === 비교를 호출한다.
-2) null과 undefined를 비교하고 있는지 확인하고 그럴경우 true를 리턴한다.
+1. 피연산자가 같은 타입인지 확인하고 같으면 === 비교를 호출한다.
+2. null과 undefined를 비교하고 있는지 확인하고 그럴경우 true를 리턴한다.
 3) string과 number를 비교하고 있는지 확인하고 그럴경우 string 값을 number[[ToNumber]]로 변환한다. 변환된 피연산자들로 == 비교를 호출하여 첫 번째 단계부터 다시 진행한다.
 
     > 입력 값에 따른 [[ToNumber]] 결과
@@ -47,13 +47,13 @@ tags: [Javascript]
 4) boolean과 다른 타입을 비교하고 있는가? 아니므로 다음 단계로 간다.
 5) object를 number/string/symbol과 비교하고 있는가? 맞으므로 array를 primitive로 변환하여 나온 값으로 == 비교를 다시 시작한다.
 
-    ```jsx
+    {% highlight js %}
     [].valueOf()
     >> []
     [].toString()
     >> ""
-    ```
-    
+    {% endhighlight %}
+
 6) "" == 0으로 비교를 다시 시작한다.
 7) 1번과 2번을 거친 후 3번에 해당하므로 string을 number로 변환한다. 빈 문자열은 0으로 변환되므로 0 == 0 으로 비교를 다시 시작한다.
 8) 1번으로 돌아가 피연산자의 타입이 같으므로 0 === 0을 호출한다.
