@@ -51,14 +51,12 @@ tags: [Javascript]
 4. boolean과 다른 타입을 비교하고 있는가? 아니므로 다음 단계로 간다.
 5. object를 number/string/symbol과 비교하고 있는가?
   맞으므로 array를 primitive로 변환하여 나온 값으로 == 비교를 다시 시작한다.
-
     {% highlight js %}
     [].valueOf()
     // []
     [].toString()
     // ""
     {% endhighlight %}
-
 6. "" == 0으로 비교를 다시 시작한다.
 7. 1번과 2번을 거친 후 3번에 해당하므로 string을 number로 변환한다.
 빈 문자열은 0으로 변환되므로 0 == 0 으로 비교를 다시 시작한다.
