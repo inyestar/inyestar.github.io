@@ -102,7 +102,7 @@ tags: [HTTP]
 <br>
 <br>
 
-#### 요청(Request)
+#### Request
 - Method : GET, POST, OPTIONS, HEAD 등이 있고 클라이언트가 원하는 동작들을 정의한다. 리소스를 가져오고 싶을 경우 GET, HTML form을 전달하고 싶을 경우 POST를 사용한다.
 - Path : URL에서 프로토콜이나 도메인과 TCP 포트를 제거한 가져올 리소스의 위치
 - HTTP Protocol : 현재 사용중인 프로토콜
