@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Equal Operator
+title: Javascript Equal Operator
 tags: [Javascript]
 ---
 

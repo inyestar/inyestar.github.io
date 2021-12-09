@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Type Coercion
+title: Javascript Type Coercion
 tags: [Javascript]
 ---
 

@@ -1,7 +1,7 @@
 ---
-layout: default
-title: Concepts
-parent: Kafka
+layout: post
+title: Kafka Concepts
+tags: [Kafka]
 ---
 
 # Concepts
