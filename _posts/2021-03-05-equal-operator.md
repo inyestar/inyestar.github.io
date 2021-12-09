@@ -11,9 +11,9 @@ tags: [Javascript]
 <br>
 
 ### Process
-1. 피연산자가 같은 타입인지 확인하고 같으면 === 비교를 호출한다.
-2. null과 undefined를 비교하고 있는지 확인하고 그럴경우 true를 리턴한다.
-3. string과 number를 비교하고 있는지 확인하고 그럴경우<br>
+- 피연산자가 같은 타입인지 확인하고 같으면 === 비교를 호출한다.
+- null과 undefined를 비교하고 있는지 확인하고 그럴경우 true를 리턴한다.
+- string과 number를 비교하고 있는지 확인하고 그럴경우<br>
 &nbsp;string 값을 number[[ToNumber]]로 변환한다.<br>
 &nbsp;변환된 피연산자들로 == 비교를 호출하여 첫 번째 단계부터 다시 진행한다.
 
@@ -24,12 +24,12 @@ tags: [Javascript]
     > - boolean → 0 혹은 1
     > - string → number, NaN, 0
 
-4. boolean과 다른 타입을 비교하고 있는지 확인하고 그럴경우 boolean을 number로 변환한다.<br>
+- boolean과 다른 타입을 비교하고 있는지 확인하고 그럴경우 boolean을 number로 변환한다.<br>
   변환된 피연산자들로 첫 번째 단계부터 다시 진행한다.
 
     > undefined, null, 0, "", NaN은 [[ToBoolean]] 후 false로 변환되고 이 외에 나머지는 true로 변환된다.
 
-5. object를 number, string, symbol과 비교하고 있는지 확인하고 그럴경우 <br>
+- object를 number, string, symbol과 비교하고 있는지 확인하고 그럴경우 <br>
 &nbsp;object를 primitive[[ToPrimitive]]로 변환한다.<br>
 &nbsp;마찬가지로 변환된 피연산자들로 == 비교를 호출하여 처음부터 다시 시작한다.
 
@@ -46,7 +46,7 @@ tags: [Javascript]
     > [] = [] 비교 시 피연산자는 모두 object이므로 ===를 호출한다.
     > 각 피연산자는 다른 주소를 저장하고 있기 때문에 false를 리턴한다.
 
-6. 위 과정에 모두 부합하지 않을 경우 false를 리턴한다.
+- 위 과정에 모두 부합하지 않을 경우 false를 리턴한다.
 <br>
 <br>
 
@@ -56,8 +56,8 @@ tags: [Javascript]
 2. null과 undefined를 비교하고 있는가? 아니므로 다음 단계로 간다.
 3. number과 string을 비교하고 있는가? 아니므로 다음 단계로 간다.
 4. boolean과 다른 타입을 비교하고 있는가? 아니므로 다음 단계로 간다.
-5. object를 number/string/symbol과 비교하고 있는가?
-  맞으므로 array를 primitive로 변환하여 나온 값으로 == 비교를 다시 시작한다.
+5. object를 number/string/symbol과 비교하고 있는가?<br>
+&nbsp;맞으므로 array를 primitive로 변환하여 나온 값으로 == 비교를 다시 시작한다.
     {% highlight js %}
       [].valueOf()
       // []
