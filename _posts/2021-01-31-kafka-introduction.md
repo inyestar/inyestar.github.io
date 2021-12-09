@@ -25,88 +25,89 @@ tags: [kafka, streaming]
 - Topic : 이벤트가 분류되는 형태로 파일시스템의 폴더와 유사한 개념이며 이벤트들은 이 폴더에 존재하게 됨
 - Partition : 토픽이 분산되어 저장될 때 해당 위치(location)를 구분짓는 개념으로 같은 key를 가진 이벤트는 같은 파티션에 추가(append)됨
 
-### Quick Start
-- Pre-Requisites
-  * docker
-    {% highlight bash %}
-      # yum-utils 설치
-      $ sudo yum install -y yum-utils
-      # yum repolist에 docker용 추가
-      $ sudo yum-config-manager \
-          --add-repo \
-          https://download.docker.com/linux/centos/docker-ce.repo
-      # docker-ce, docker-ce-cli, containerd.io 설치
-      $ sudo yum -y install docker-ce docker-ce-cli containerd.io
-      # systemctl로 docker 서비스 시작
-      $ sudo systemctl start docker
-      # hello-world 이미지 실행
-      $ sudo docker run hello-world
-    {% endhighlight %}
-  * docker-compose
-    ```bash
-      # github에서 os와 arch에 맞는 docker-compose 파일을 받아서 /usr/local/bin/docker-compose에 저장
-      $ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-      # 내려받은 파일에 실행권한 추가
-      $ sudo chmod +x /usr/local/bin/docker-compose
-      # sudo 명령어 사용을 위해 /usr/bin 디렉토리에 docker-compose 링크 생성
-      $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
-      # version 확인 명령어로 잘 설치되었는지 확인
-      $ docker-compose --version
-    ```
-  * 방화벽 추가
-    ```bash
-      # local 테스트만 진행할 경우 방화벽 설정 안해도 상관 없음
-      # systemctl stop firewalld로 서비스 중지 해도 됨
-      # kafka 브로커 포트 추가
-      $ sudo firewall-cmd --permanent --add-port=9092/tcp
-      # zookeeper 포트 추가
-      $ sudo firewall-cmd --permanent --add-port=2181/tcp
-      # 방화벽 정책 리로딩
-      $ sudo firewall-cmd --reload
-      # 현재 zone의 정책 확인
-      $ sudo firewall-cmd --list-all
-    ```
-- Kafka
+### Pre-Requisites
+- docker
   ```bash
-    # /home 디렉토리로 이동
-    $ cd /home
-    # --- 사이의 내용 작성
-    $ vi docker-compose.yml
-      ---
-      version: '3'
-      services:
-      zookeeper:
-        image: confluentinc/cp-zookeeper:6.2.0
-        hostname: zookeeper
-        container_name: zookeeper
-        environment:
-          ZOOKEEPER_CLIENT_PORT: 2181
-          ZOOKEEPER_TICK_TIME: 2000
-
-      broker:
-        image: confluentinc/cp-kafka:6.2.0
-        container_name: broker
-        ports:
-          - "9092:9092"
-        depends_on:
-          - zookeeper
-        environment:
-          KAFKA_BROKER_ID: 1
-          KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
-          KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
-          KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://broker:29092
-          KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-          KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
-          KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
-      ---
-    # docker-compose.yml을 통해 kafka 도커 컨테이너 올림
-    $ sudo docker-compose up -d
+  # yum-utils 설치
+  $ sudo yum install -y yum-utils
+  # yum repolist에 docker용 추가
+  $ sudo yum-config-manager \
+      --add-repo \
+      https://download.docker.com/linux/centos/docker-ce.repo
+  # docker-ce, docker-ce-cli, containerd.io 설치
+  $ sudo yum -y install docker-ce docker-ce-cli containerd.io
+  # systemctl로 docker 서비스 시작
+  $ sudo systemctl start docker
+  # hello-world 이미지 실행
+  $ sudo docker run hello-world
+  ```
+- docker-compose
+  ```bash
+  # github에서 os와 arch에 맞는 docker-compose 파일을 받아서 /usr/local/bin/docker-compose에 저장
+  $ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  # 내려받은 파일에 실행권한 추가
+  $ sudo chmod +x /usr/local/bin/docker-compose
+  # sudo 명령어 사용을 위해 /usr/bin 디렉토리에 docker-compose 링크 생성
+  $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+  # version 확인 명령어로 잘 설치되었는지 확인
+  $ docker-compose --version
+  ```
+- 방화벽 추가
+  ```bash
+  # local 테스트만 진행할 경우 방화벽 설정 안해도 상관 없음
+  # systemctl stop firewalld로 서비스 중지 해도 됨
+  # kafka 브로커 포트 추가
+  $ sudo firewall-cmd --permanent --add-port=9092/tcp
+  # zookeeper 포트 추가
+  $ sudo firewall-cmd --permanent --add-port=2181/tcp
+  # 방화벽 정책 리로딩
+  $ sudo firewall-cmd --reload
+  # 현재 zone의 정책 확인
+  $ sudo firewall-cmd --list-all
   ```
 
-## Advanced
+### Quick Start
+- Kafka
+```bash
+  # /home 디렉토리로 이동
+  $ cd /home
+  # --- 사이의 내용 작성
+  $ vi docker-compose.yml
+    ---
+    version: '3'
+    services:
+    zookeeper:
+      image: confluentinc/cp-zookeeper:6.2.0
+      hostname: zookeeper
+      container_name: zookeeper
+      environment:
+        ZOOKEEPER_CLIENT_PORT: 2181
+        ZOOKEEPER_TICK_TIME: 2000
+
+    broker:
+      image: confluentinc/cp-kafka:6.2.0
+      container_name: broker
+      ports:
+        - "9092:9092"
+      depends_on:
+        - zookeeper
+      environment:
+        KAFKA_BROKER_ID: 1
+        KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+        KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
+        KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://broker:29092
+        KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+        KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+        KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+    ---
+  # docker-compose.yml을 통해 kafka 도커 컨테이너 올림
+  $ sudo docker-compose up -d
+  ```
+
+### Advanced
 - zookeeper (TODO)
 
-## References
+### References
 - https://kafka.apache.org/documentation/#gettingStarted
 - https://docs.docker.com/engine/install/centos/
 - https://docs.docker.com/compose/install/
