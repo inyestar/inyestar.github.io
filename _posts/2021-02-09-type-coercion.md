@@ -4,99 +4,97 @@ title: Type Coercion
 tags: [Javascript]
 ---
 
-# Type Coercion
-
-| 날짜 | 2021년 02월 09일 |
-|:----------|:-------------------------------------|
-| 출처 | https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/|
-
-## 정의
+### 정의
 - coercion의 사전적 정의는 '강제'
-- 어떤 타입을 다른 타입으로 변환하는 프로세스
+- 어떤 타입을 다른 타입으로 변환하는 프로세스\
   예) string → number, object → boolean 등
 - 마음속으로 '강제 형변환'이라고 명명하고 기사를 읽고 있음..^^;
 
-## 명시적 vs 암시적 변환
-- 명시적 변환
+### 명시적 vs 암시적 변환
+
+#### 명시적 변환
 - 개발자가 의도를 가지고 형변환을 한 경우
 - Type Casting 이라고도 함
-  ```jsx
-    var str = '0'
-    Number(str)
-    >> 0
-  ```
-- 암시적 변환
-- 타입에 비교적 자유로운 자바스크립트에서 자동으로 일어나는 형변환
-- 서로 다른 타입의 값 끼리 연산자를 통해 비교하거나 if와 같은 주변 컨텍스트에 의해 발생할 수 있음
+    {% highlight js %}
+      var str = '0'
+      Number(str)
+      // 0
+    {% endhighlight %}
 
-  ```jsx
+#### 암시적 변환
+- 타입에 비교적 자유로운 자바스크립트에서 자동으로 일어나는 형변환
+- 서로 다른 타입의 값 끼리 연산자를 통해 비교하거나 \
+if와 같은 주변 컨텍스트에 의해 발생할 수 있음
+    {% highlight js %}
     2 / '5'
-    >> 0.4
+    // 0.4
     null + new Date()
-    >> "nullTue Feb 23 2021 20:40:13 GMT+0900 (대한민국 표준시)"
+    // "nullTue Feb 23 2021 20:40:13 GMT+0900 (대한민국 표준시)"
     if('notboolean') console.log('hi')
-    >> hi
-  ```
+    // hi
+    {% endhighlight %}
 - '===' 으로 표현되는 연산자 사용할 경우 암시적 형변환은 발생하지 않는다.
 
-## 변환 유형
+### 변환 유형
 - 기본형과 object(변환 로직은 다르지만)는 아래 세 가지로만 변환이 가능하다.
-### String 변환
-* 명시적 : String(값)
-* 암시적 : 피연산자인 문자열과 '+' 연산자가 만날 경우 발생함
-  ```jsx
-    String(123) // 명시적
-    >> "123"
-    123 + '' // 암시적
-    >> "123"
-  ```
 
-* ymbol 타입은 명시적으로만 문자열로 변환이 가능하다.
+#### String 변환
+- 명시적 : String(값)
+- 암시적 : 피연산자인 문자열과 '+' 연산자가 만날 경우 발생함
+    {% highlight js %}
+    String(123) // 명시적
+    // "123"
+    123 + '' // 암시적
+    // "123"
+    {% endhighlight %}
+- ymbol 타입은 명시적으로만 문자열로 변환이 가능하다.\
   예) String(Symbol('my symbol'))
 
-### Boolean 변환
+#### Boolean 변환
 - 명시적 : Boolean(값)
 - 암시적 : 논리적 컨텍스트나 논리 연산자(||, &&, !)에 의해 발생함
 - false로 간주되는 경우 : '', 0, -0, NaN, null, undefined, false
-  ```jsx
+    {% highlight js %}
     Boolean(2) // 명시적
-    >> true
+    // true
     if (2) console.log('yes') // 암시적
-    >> yes
+    // yes
     !!2
-    >> true
+    // true
     2 || 'hello'
-    >> 2
-  ```
+    // 2
+    {% endhighlight %}
 - 논리 연산자 || 와 &&는 내부적으로 boolean 변환을 수행하지만, 피연산자의 원래 값을 반환한다.
 
-### Number 변환
+#### Number 변환
 - 명시적 : Number(값)
 - 암시적 : 아래 요소들에 의해 발생함
-   1. 비교 연산자(>, <, ≤, ≥)
-   2. 비트연산자(|, &, ^, ~)
-   3. 산술 연산자(-, +, *, /, %)
-   4. 동등 연산자 (==, !=)
-   5. 단항현산자 (+, -)
-    ```jsx
-      Number('123') // 명시적
-      >> 123
-      123 != '456' // 암시적
-      >> true
-      4 > '5'
-      >> false
-      5/null
-      >> Infinity
-      true | 0
-      >> 1
-      + '123'
-      >> 123
-    ```
-- 문자열을 Number로 변환할 경우, 엔진은 먼저 문자열 앞뒤 공백이나 \n 이나 \t 문자를 잘라낸다. 잘라낸 문자열이 유효한 숫자가 아닐 경우 NaN(Not a Number)을 반환한다. 문자열이 공백일 경우 0을 반환한다.
+    1. 비교 연산자(>, <, ≤, ≥)
+    2. 비트연산자(|, &, ^, ~)
+    3. 산술 연산자(-, +, *, /, %)
+    4. 동등 연산자 (==, !=)
+    5. 단항현산자 (+, -)
+        {% highlight js %}
+        Number('123') // 명시적
+        // 123
+        123 != '456' // 암시적
+        // true
+        4 > '5'
+        // false
+        5/null
+        // Infinity
+        true | 0
+        // 1
+        + '123'
+        // 123
+        {% endhighlight %}
+- 문자열을 Number로 변환할 경우, 엔진은 먼저 문자열 앞뒤 공백이나 \n 이나 \t 문자를 잘라낸다. \
+잘라낸 문자열이 유효한 숫자가 아닐 경우 NaN(Not a Number)을 반환한다.\
+문자열이 공백일 경우 0을 반환한다.
 - null은 0으로 변환되지만 undefined는 NaN으로 변환된다.
 - Symbol 타입은 Number로 변환되지 않으며, TypeError를 던진다.
   1. null과 undefined에 == 연산자를 적용할 경우 Number 변환은 일어나지 않는다.
-      null은 undefined나 null로만 일치할 수 있기 때문이다.
+    null은 undefined나 null로만 일치할 수 있기 때문이다.
   2. NaN는 자기 자신 혹은 다른 어떤것이라도 일치하지 않는다.
 
 ### Object의 형변환
