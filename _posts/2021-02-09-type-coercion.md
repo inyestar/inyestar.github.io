@@ -46,7 +46,7 @@ tags: [Javascript]
     123 + '' // 암시적
     // "123"
     {% endhighlight %}
-- Symbol 타입은 명시적으로만 문자열로 변환이 가능하다.
+- Symbol 타입은 명시적으로만 문자열로 변환이 가능하다.<br/>
     예) String(Symbol('my symbol'))
 
 #### Boolean 변환
