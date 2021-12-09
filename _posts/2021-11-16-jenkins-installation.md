@@ -136,5 +136,5 @@ tags: [Jenkins]
 <br>
 
 ## References
-- [https://www.jenkins.io/doc/book/installing/docker/] (https://www.jenkins.io/doc/book/installing/docker/)
+- [https://www.jenkins.io/doc/book/installing/docker/](https://www.jenkins.io/doc/book/installing/docker/)
 - [https://docs.docker.com/registry/deploying/](https://docs.docker.com/registry/deploying/)
