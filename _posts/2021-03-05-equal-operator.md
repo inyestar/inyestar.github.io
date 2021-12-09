@@ -10,7 +10,7 @@ tags: [Javascript]
 <br>
 <br>
 
-### Process
+### 타입 변환 절차
 - 피연산자가 같은 타입인지 확인하고 같으면 === 비교를 호출한다.
 - null과 undefined를 비교하고 있는지 확인하고 그럴경우 true를 리턴한다.
 - string과 number를 비교하고 있는지 확인하고 그럴경우<br>
