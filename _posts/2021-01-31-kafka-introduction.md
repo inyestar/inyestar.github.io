@@ -8,6 +8,8 @@ tags: [kafka, streaming]
 - 사람의 중추 신경계와 같은 역할
 - Stream 형태의 데이터를 실시간으로 캡쳐하는 방식
 - 데이터의 지속적인 흐름을 보장하여 'always-on'을 가능하게 함
+<br>
+<br>
 
 ### Apache Kafka
 - 이벤트 스트리밍 플랫폼
@@ -16,6 +18,8 @@ tags: [kafka, streaming]
 - 이벤트 발생 시 바로 혹은 소급하여 이벤트 스트림을 처리할 수 있음
 - 서버와 클라이언트로 구성되어 있으며 TCP 네트워크 프로토콜로 통신함
 - 하나 이상의 서버가 클러스터 형태로 운영됨
+<br>
+<br>
 
 ### Terminology
 - Event : kafka에서 데이터 스트림 처리 시 사용하는 논리적 개념으로 key, value, timestamp, 기타 헤더 정보를 가지고 있음
@@ -24,6 +28,8 @@ tags: [kafka, streaming]
 - Broker : kafka 서버
 - Topic : 이벤트가 분류되는 형태로 파일시스템의 폴더와 유사한 개념이며 이벤트들은 이 폴더에 존재하게 됨
 - Partition : 토픽이 분산되어 저장될 때 해당 위치(location)를 구분짓는 개념으로 같은 key를 가진 이벤트는 같은 파티션에 추가(append)됨
+<br>
+<br>
 
 ### Pre-Requisites
 - docker
@@ -65,6 +71,8 @@ tags: [kafka, streaming]
   # 현재 zone의 정책 확인
   $ sudo firewall-cmd --list-all
   ```
+<br>
+<br>
 
 ### Quick Start
 - Kafka
@@ -103,9 +111,13 @@ tags: [kafka, streaming]
   # docker-compose.yml을 통해 kafka 도커 컨테이너 올림
   $ sudo docker-compose up -d
   ```
+<br>
+<br>
 
 ### Advanced
 - zookeeper (TODO)
+<br>
+<br>
 
 ### References
 - [https://kafka.apache.org/documentation/#gettingStarted](https://kafka.apache.org/documentation/#gettingStarted)

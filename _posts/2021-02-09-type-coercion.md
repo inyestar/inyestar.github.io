@@ -96,7 +96,8 @@ tags: [Javascript]
 - null은 0으로 변환되지만 undefined는 NaN으로 변환된다.
 - Symbol 타입은 Number로 변환되지 않으며, TypeError를 던진다.
   - null과 undefined에 == 연산자를 적용할 경우 Number 변환은 일어나지 않는다. <br>
-    null은 undefined나 null로만 일치할 수 있기 때문이다.
+    > null은 undefined나 null로만 일치할 수 있기 때문이다.
+
   - NaN는 자기 자신 혹은 다른 어떤것이라도 일치하지 않는다.
 <br>
 <br>
