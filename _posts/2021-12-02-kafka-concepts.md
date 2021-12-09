@@ -18,9 +18,9 @@ tags: [Kafka]
 - 즉, Kafka가 처리하는 가장 작은 크기의 논리적 데이터 단위
 - Test
   - 이벤트 생성
-        ```bash
-        $
-        ```
+      ```bash
+      $
+      ```
 - 💡 Event 사이즈 별 Kafka 성능 테스트가 필요하지 않을까? 문서에서는 문제 없다고 말하지만.
 <br>
 <br>
@@ -29,13 +29,13 @@ tags: [Kafka]
 - Kafka에 이벤트를 publish (write) 하는 클라이언트
 - Test
   - 존재하는 Topic에 이벤트 생성
-        ```bash
-        $
-        ```
+      ```bash
+      $
+      ```
   - 존재하지 않은 Topic에 이벤트 생성
-        ```bash
-        $
-        ```
+      ```bash
+      $
+      ```
 <br>
 <br>
 
@@ -45,17 +45,17 @@ tags: [Kafka]
 - Consumer에 의해 이벤트가 소비된 후에도 Kafka는 이벤트를 삭제 않기 때문에 필요한 만큼 같은 이벤트를 계속 Subscribe 할 수 있음
 - Test
   - 존재하는 Topic에 이벤트 조회
-        ```bash
-        $
-        ```
+      ```bash
+      $
+      ```
   - 존재하지 않은 Topic에 이벤트 조회
-        ```bash
-        $
-        ```
+      ```bash
+      $
+      ```
   - 특정 Topic의 이벤트 조회
-        ```bash
-        $
-        ```
+      ```bash
+      $
+      ```
 <br>
 <br>
 
@@ -68,21 +68,21 @@ tags: [Kafka]
 - 모든 Topic은 복제가 가능함 (보통 복제본 개수는 3의 배수로 설정)
 - Test
   - Topic 생성
-        ```bash
-        $
-        ```
+      ```bash
+      $
+      ```
   - Topic 중복 생성
-        ```bash
-        $
-        ```
+      ```bash
+      $
+      ```
   - Topic 조회
-        ```bash
-        $
-        ```
+      ```bash
+      $
+      ```
   - Topic 삭제
-        ```bash
-        $
-        ```
+      ```bash
+      $
+      ```
 <br>
 <br>
 
