@@ -17,21 +17,21 @@ tags: [Javascript]
 - 개발자가 의도를 가지고 형변환을 한 경우
 - Type Casting 이라고도 함
   {% highlight js %}
-  var str = '0'
-  Number(str)
-  // 0
+    var str = '0'
+    Number(str)
+    // 0
   {% endhighlight %}
 
 #### 암시적 변환
 - 타입에 비교적 자유로운 자바스크립트에서 자동으로 일어나는 형변환
 - 서로 다른 타입의 값 끼리 연산자를 통해 비교하거나 if와 같은 주변 컨텍스트에 의해 발생
   {% highlight js %}
-  2 / '5'
-  // 0.4
-  null + new Date()
-  // "nullTue Feb 23 2021 20:40:13 GMT+0900 (대한민국 표준시)"
-  if('notboolean') console.log('hi')
-  // hi
+    2 / '5'
+    // 0.4
+    null + new Date()
+    // "nullTue Feb 23 2021 20:40:13 GMT+0900 (대한민국 표준시)"
+    if('notboolean') console.log('hi')
+    // hi
   {% endhighlight %}
 - '===' 으로 표현되는 연산자 사용할 경우 암시적 형변환은 발생하지 않는다.
 <br>
@@ -44,10 +44,10 @@ tags: [Javascript]
 - 명시적 : String(값)
 - 암시적 : 피연산자인 문자열과 '+' 연산자가 만날 경우 발생함
   {% highlight js %}
-  String(123) // 명시적
-  // "123"
-  123 + '' // 암시적
-  // "123"
+    String(123) // 명시적
+    // "123"
+    123 + '' // 암시적
+    // "123"
   {% endhighlight %}
 - Symbol 타입은 명시적으로만 문자열로 변환이 가능하다.<br>
 &nbsp;예) String(Symbol('my symbol'))
@@ -57,14 +57,14 @@ tags: [Javascript]
 - 암시적 : 논리적 컨텍스트나 논리 연산자(\|\|, &&, !)에 의해 발생
 - false로 간주되는 경우 : '', 0, -0, NaN, null, undefined, false
   {% highlight js %}
-  Boolean(2) // 명시적
-  // true
-  if (2) console.log('yes') // 암시적
-  // yes
-  !!2
-  // true
-  2 || 'hello'
-  // 2
+    Boolean(2) // 명시적
+    // true
+    if (2) console.log('yes') // 암시적
+    // yes
+    !!2
+    // true
+    2 || 'hello'
+    // 2
   {% endhighlight %}
 - 논리 연산자 \|\| 와 &&는 내부적으로 boolean 변환을 수행하지만, 피연산자의 원래 값을 반환한다.
 
@@ -77,18 +77,18 @@ tags: [Javascript]
   - 동등 연산자 (==, !=)
   - 단항현산자 (+, -)
     {% highlight js %}
-    Number('123') // 명시적
-    // 123
-    123 != '456' // 암시적
-    // true
-    4 > '5'
-    // false
-    5/null
-    // Infinity
-    true | 0
-    // 1
-    + '123'
-    // 123
+      Number('123') // 명시적
+      // 123
+      123 != '456' // 암시적
+      // true
+      4 > '5'
+      // false
+      5/null
+      // Infinity
+      true | 0
+      // 1
+      + '123'
+      // 123
     {% endhighlight %}
 - 문자열을 Number로 변환할 경우, 엔진은 먼저 문자열 앞뒤 공백이나 \n 이나 \t 문자를 잘라낸다.<br>
   잘라낸 문자열이 유효한 숫자가 아닐 경우 NaN(Not a Number)을 반환한다.<br>
