@@ -10,7 +10,7 @@ tags: [Javascript]
   예) string → number, object → boolean 등
 - 마음속으로 '강제 형변환'이라고 명명하고 기사를 읽고 있음..^^;
 <br/>
-
+<br/>
 ### 명시적 vs 암시적 변환
 #### 명시적 변환
 - 개발자가 의도를 가지고 형변환을 한 경우
