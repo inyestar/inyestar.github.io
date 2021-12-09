@@ -12,7 +12,7 @@ parent: Kafka
 
 ## Prerequsite
 - Zookeeper 서비스 up
-- Kafka Broker 서비스 2개 up
+- Kafka Broker 서비스 1개 up
 
 ## Event
 - "Something happend"
@@ -86,9 +86,11 @@ parent: Kafka
 - 특정 Topic 용 이벤트가 생성되면 해당 Topic의 Partition 중 하나에 추가 되는 것
 - 같은 Event key를 가진 이벤트는 같은 Partition에 기록 됨
 - Event는 Partition에 기록된 순선데로 소비할 수 있음
+- 하나의 Topic이 여러개의 Partition으로 들어갈 경우 각 파티션끼리의 순서는 보장되지 않음
 
 ## Offset
-
+- Consumer의 현재 위치
 
 ## References
 https://kafka.apache.org/documentation/#design
+https://akageun.github.io/2020/05/01/docker-compose-kafka-cluster-manager.html
