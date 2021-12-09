@@ -43,13 +43,13 @@ tags: [Docker]
 
 ### Usage
 - Docker 엔진, CLI, Containerd 패키지 삭제
-  ```bash
-  $ sudo yum remove docker-ce docker-ce-cli containerd.io
-  ```
+    ```bash
+    $ sudo yum remove docker-ce docker-ce-cli containerd.io
+    ```
 - 이미지, 컨테이너, 볼륨 파일은 수동으로 삭제 필요
-  ```bash
-  $ sudo rm -rf /var/lib/docker
-  ```
+    ```bash
+    $ sudo rm -rf /var/lib/docker
+    ```
 <br>
 <br>
 
