@@ -6,7 +6,9 @@ tags: [Kafka]
 
 ### Prerequsites
 - Zookeeper 서비스 up
-- Kafka Broker 서비스 1개 up
+- Kafka Broker 서비스 3개 up
+- docker-compose로 구성 : [alone-message](https://github.com/inminhouse/alone-message)
+
 <br>
 <br>
 
@@ -16,11 +18,6 @@ tags: [Kafka]
 - 이 "이벤트" 형식으로 Kafka에서 데이터를 읽거나 쓸 수 있음
 - key, value, timestamp, metadata (optional)로 구성됨
 - 즉, Kafka가 처리하는 가장 작은 크기의 논리적 데이터 단위
-- Test
-  - 이벤트 생성
-      ```bash
-      $
-      ```
 - 💡 Event 사이즈 별 Kafka 성능 테스트가 필요하지 않을까? 문서에서는 문제 없다고 말하지만.
 <br>
 <br>
@@ -69,19 +66,44 @@ tags: [Kafka]
 - Test
   - Topic 생성
       ```bash
-      $
+      $ docker exec kafka_1 \
+              kafka-topics \
+              --bootstrap-server localhost:9092,kafka_2:9092,kafka_3:9092 \
+              --create --topic chat01 \
+              --partitions 3 \
+              --replication-factor 3
+      # Created topic chat01.
       ```
   - Topic 중복 생성
       ```bash
-      $
+      $ docker exec kafka_1 \
+              kafka-topics \
+              --bootstrap-server localhost:9092,kafka_2:9092,kafka_3:9092 \
+              --create --topic chat01 \
+              --partitions 3 \
+              --replication-factor 3
+      # Error while executing topic command : Topic 'chat01' already exists.
       ```
   - Topic 조회
       ```bash
-      $
+      $ docker exec kafka_1 \
+              kafka-topics \
+              --bootstrap-server localhost:9092,kafka_2:9092,kafka_3:9092 \
+            	--list
+      # chat01
       ```
   - Topic 삭제
       ```bash
-      $
+      $ docker exec kafka_1 \
+              kafka-topics \
+              --bootstrap-server localhost:9092,kafka_2:9092,kafka_3:9092 \
+              --delete \
+              --topic chat01
+      $ docker exec kafka_1 \
+              kafka-topics \
+              --bootstrap-server localhost:9092,kafka_2:9092,kafka_3:9092 \
+            	--list
+      # <empty>
       ```
 <br>
 <br>
