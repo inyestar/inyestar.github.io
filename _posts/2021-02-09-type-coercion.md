@@ -9,8 +9,8 @@ tags: [Javascript]
 - 어떤 타입을 다른 타입으로 변환하는 프로세스<br/>
   예) string → number, object → boolean 등
 - 마음속으로 '강제 형변환'이라고 명명하고 기사를 읽고 있음..^^;
-<br/>
-<br/>
+<br>
+<br>
 ### 명시적 vs 암시적 변환
 #### 명시적 변환
 - 개발자가 의도를 가지고 형변환을 한 경우
@@ -88,12 +88,12 @@ tags: [Javascript]
     + '123'
     // 123
     {% endhighlight %}
-- 문자열을 Number로 변환할 경우, 엔진은 먼저 문자열 앞뒤 공백이나 \n 이나 \t 문자를 잘라낸다.<br/>
-  잘라낸 문자열이 유효한 숫자가 아닐 경우 NaN(Not a Number)을 반환한다.<br/>
+- 문자열을 Number로 변환할 경우, 엔진은 먼저 문자열 앞뒤 공백이나 \n 이나 \t 문자를 잘라낸다.<br>
+  잘라낸 문자열이 유효한 숫자가 아닐 경우 NaN(Not a Number)을 반환한다.<br>
   문자열이 공백일 경우 0을 반환한다.
 - null은 0으로 변환되지만 undefined는 NaN으로 변환된다.
 - Symbol 타입은 Number로 변환되지 않으며, TypeError를 던진다.
-  - null과 undefined에 == 연산자를 적용할 경우 Number 변환은 일어나지 않는다. <br/>
+  - null과 undefined에 == 연산자를 적용할 경우 Number 변환은 일어나지 않는다. <br>
     null은 undefined나 null로만 일치할 수 있기 때문이다.
   - NaN는 자기 자신 혹은 다른 어떤것이라도 일치하지 않는다.
 
@@ -108,12 +108,12 @@ tags: [Javascript]
   2. input.toString()을 호출한 뒤 결과가 기본형일 경우 그대로 반환한다.
   3. input.valueOf()를 호출한 뒤 결과가 기본형일 경우 그대로 반환한다.
   4. 위 두 단계에서 기본형이 나오지 않을 경우 TypeError를 던진다.
-- 대부분의 내장 타입들은 valueOf 함수가 아예 없거나 있어도 자기 자신인 this를 반환하고 있다.<br/>
-this를 반환할 경우에 valueOf의 결과는 기본형이 아니므로 무시된다. <br/>
-따라서 Number 변환이나 String 변환이나 toString을 호출한 것과 같아진다.
-- ==나 이진 + 연산자의 경우 default 변환(prefferedType 파라미터가 특정되지 않거나 default인 상태)을 일으킨다. <br/>
-이러한 경우 Date을 제외한 대부분의 내장 타입들은 default로 Number 변환을 수행한다.
-- ES5에서는 toString이나 valueOf 메소드를 오버라이딩하는 방식으로 변환 로직을 수정하였으나<br/>
+- 대부분의 내장 타입들은 valueOf 함수가 아예 없거나 있어도 자기 자신인 this를 반환하고 있다.<br>
+&nbsp;this를 반환할 경우에 valueOf의 결과는 기본형이 아니므로 무시된다. <br>
+&nbsp;따라서 Number 변환이나 String 변환이나 toString을 호출한 것과 같아진다.
+- ==나 이진 + 연산자의 경우 default 변환(prefferedType 파라미터가 특정되지 않거나 default인 상태)을 일으킨다. <br>
+&nbsp;이러한 경우 Date을 제외한 대부분의 내장 타입들은 default로 Number 변환을 수행한다.
+- ES5에서는 toString이나 valueOf 메소드를 오버라이딩하는 방식으로 변환 로직을 수정하였으나<br>
 ES6에서는 Object의 Symbol.toPrimitive 메소드를 구현하여 ToPrimitive 메소드를 완전히 대체할 수 있게 되었다.
 - Boolean 변환의 경우 모든 기본형이 아닌 값들은 true로 변환됨
 
