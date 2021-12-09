@@ -4,7 +4,7 @@ title: Kafka Concepts
 tags: [Kafka]
 ---
 
-### Prerequsite
+### Prerequsites
 - Zookeeper 서비스 up
 - Kafka Broker 서비스 1개 up
 <br>

@@ -1,13 +1,10 @@
 ---
-layout: default
-title: 4th
-parent: ALONE
+layout: post
+title: React Overview
+tags: [React]
 ---
 
-# 2021년 11월 24일
-
-## NOTE
-#### React
+#### Concepts
 - JSX : HTML과 비슷하면서도 약간의 차이가 존재하는 자바스크립트로서 (객체를 의미하는 거겠지?) HTML처럼 앱의 구조를 만들 때 사용
 - Component : 재사용이 가능하며 독립적인 성격을 가진 UI에 대한 논리적 구분
   - 한 번 선언하고 나면 HTML 처럼 사용 가능
@@ -27,5 +24,5 @@ parent: ALONE
 - Ref : Dom elements를 참조할 수 있도록 해주는 React의 기능
   - JSX로 생성한 태그에 ref 객체를 넘기면 콤포넌츠 내에서 ref 객체를 통해 해당 태그에 접근 가능
 
-## REFERENCES
+### References
 - https://www.freecodecamp.org/news/react-tutorial-build-a-project/
