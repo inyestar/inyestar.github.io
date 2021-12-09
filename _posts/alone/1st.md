@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 1st
+post: 1st
 parent: ALONE
 ---
 
