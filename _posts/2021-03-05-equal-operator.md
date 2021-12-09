@@ -11,8 +11,8 @@ tags: [Javascript]
 ### Process
 1. 피연산자가 같은 타입인지 확인하고 같으면 === 비교를 호출한다.
 2. null과 undefined를 비교하고 있는지 확인하고 그럴경우 true를 리턴한다.
-3. string과 number를 비교하고 있는지 확인하고 그럴경우 string 값을 number[[ToNumber]]로 변환한다.
-\ 변환된 피연산자들로 == 비교를 호출하여 첫 번째 단계부터 다시 진행한다.
+3. string과 number를 비교하고 있는지 확인하고 그럴경우 string 값을 number[[ToNumber]]로 변환한다.\
+변환된 피연산자들로 == 비교를 호출하여 첫 번째 단계부터 다시 진행한다.
 
     > 입력 값에 따른 [[ToNumber]] 결과
     > - undefined → NaN
