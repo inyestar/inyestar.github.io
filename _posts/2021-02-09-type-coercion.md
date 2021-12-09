@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: post
 title: Type Coercion
-parent: Javascript
+tags: [Javascript]
 ---
 
 # Type Coercion
@@ -114,3 +114,6 @@ parent: Javascript
 - ==나 이진 + 연산자의 경우 default 변환(prefferedType 파라미터가 특정되지 않거나 default인 상태)을 일으킨다.  이러한 경우 Date을 제외한 대부분의 내장 타입들은 default로 Number 변환을 수행한다.
 - ES5에서는 toString이나 valueOf 메소드를 오버라이딩하는 방식으로 변환 로직을 수정하였으나 ES6에서는 Object의 Symbol.toPrimitive 메소드를 구현하여  ToPrimitive 메소드를 완전히 대체할 수 있게 되었다.
 - Boolean 변환의 경우 모든 기본형이 아닌 값들은 true로 변환됨
+
+### References
+- [https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/)
