@@ -1,4 +1,4 @@
-baseurl: "/" 
+baseurl: "/"
 url: "https://inyestar.github.io"
 remote_theme: rohanchandra/type-theme
 
@@ -6,8 +6,4 @@ remote_theme: rohanchandra/type-theme
 theme_settings:
   title: Inyestar
   description: Inyestar Blog
-  header_text: <p>hihi</p>
-  header_text_feature_image:
-  footer_text: >
-     Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
   search: true
