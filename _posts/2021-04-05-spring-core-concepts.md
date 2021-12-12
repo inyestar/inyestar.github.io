@@ -4,7 +4,7 @@ title: Spring Core Concepts
 tags: [Java, Spring]
 ---
 
-### Spring IoC (Inversion of Control) Container
+### Spring Inversion of Control (IoC) Container
 - Spring의 핵심
 - Object를 생성, 연결, 구성 등 object 전체 라이프 사이클 관리
 - 애플리케이션을 구성하는 콤포넌츠를 관리하기위해 DI를 사용
@@ -43,7 +43,7 @@ tags: [Java, Spring]
     - Web을 사용하는 ApplicationContext에서만 유효함
   - global-session, custom, web socket, refresh, thread 등이 있음
 
-### Dependency Injection
+### Dependency Injection (DI)
 - IoC 컨테이너가 서비스 impl을 Target object의 프로퍼티에 Injection함
 - Injection은 생성자나 setter 메소드를 통해 이루어짐
 - Target object가 직접 서비스 impl의 인스턴스를 생성하지 않도록 하는 이유는 애플리케이션의 객체가 POJO 그 자체로 존재할 수 있도록 하기 위함
@@ -54,7 +54,7 @@ tags: [Java, Spring]
 <br>
 <br>
 
-### Aspect Oriented Programming
+### Aspect Oriented Programming (AOP)
 - 프로그래밍 로직을 관심사를 중심으로 재구성
 - 관심사 교차로 모듈성 향상
 - 관심사 교차란 한 공간에 존재하는 코드로 전체 애플리케이션에 영향을 끼치는 것을 의미함
@@ -62,7 +62,18 @@ tags: [Java, Spring]
 <br>
 <br>
 
+### Portable Service Abstraction (PSA)
+- Service Abstraction : 개발 시 편의성 제공을 위해 추상화 계층을 통해 내부 기술을 숨김
+  - 예: @Transactional 애너테이션을 통해 Transaction을 사용하면 Transaction의 서비스 구간만 개발자가 정의하고 실제로 Transaction을 열거나 rollback하거나 커넥션을 닫는 부분은 Spring이 알아서 처리해줌
+- 하나의 추상화로 여러 서비스를 묶은 것
+- JDBC나 ORM 방식으로 DB에 접근할 수 있지만 @Transactional의 내부 코드를 수정하지는 않음
+- 예 : Spring은 PlatformTranscationManager 사용하고 사용자 정의에 따라 JPATransactionManager, DatasourceTransactionManager, HibernateTransactionManager 등을 의존성 주입하여 사용하기 때문에 어떠한 DB 맵핑 전략을 사용하더라도 @Transactional 애너테이션 사용이 가능함
+
+<br>
+<br>
+
 ### References
 - [https://www.dariawan.com/tutorials/spring/core-concepts-of-the-spring-framework/](https://www.dariawan.com/tutorials/spring/core-concepts-of-the-spring-framework/)
 - [https://siyoon210.tistory.com/120]{https://siyoon210.tistory.com/120}
 - [https://blog.daum.net/tomayoon/7095404](https://blog.daum.net/tomayoon/7095404)
+- [https://chanho0912.tistory.com/17](https://chanho0912.tistory.com/17)
