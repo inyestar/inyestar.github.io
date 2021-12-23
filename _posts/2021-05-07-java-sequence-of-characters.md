@@ -58,10 +58,12 @@ tags: [Java]
 <br>
 <br>
 
-## Usecase
+### Usecase
 - 상수로 사용할 땐 String
 - 계속 수정 필요 + 단일 쓰레드에서만 접근할 경우 StringBuilder
 - 계속 수정 필요 + 다수의 쓰레드가 접근해야할 경우 StringBuffer
+<br>
+<br>
 
 ### Examples
 - immutable과 mutable
