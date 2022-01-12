@@ -72,5 +72,5 @@ tags: [Java]
 - [https://howtodoinjava.com/java/io/how-java-io-works-internally/](https://howtodoinjava.com/java/io/how-java-io-works-internally/)
 - [https://palpit.tistory.com/641](https://palpit.tistory.com/641)
 - [https://kkhipp.tistory.com/168](https://kkhipp.tistory.com/168)
-- [https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%9E%A9_(%EC%BB%B4%ED%93%A8%ED%8C%85)](https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%9E%A9_(%EC%BB%B4%ED%93%A8%ED%8C%85)
+- [https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%9E%A9_(%EC%BB%B4%ED%93%A8%ED%8C%85)](https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%9E%A9_(%EC%BB%B4%ED%93%A8%ED%8C%85))
 - [https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=lyongh00&logNo=90050623703](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=lyongh00&logNo=90050623703)
