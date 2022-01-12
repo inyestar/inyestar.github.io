@@ -1,4 +1,4 @@
----
+  ---
 layout: post
 title: Spring REST API
 tags: [Spring]
@@ -69,6 +69,7 @@ tags: [Spring]
   - HTTP method에 상응하여 처리할 메소드를 명시하는 애너테이션
 - @RestController
   - 컨트롤러 안의 각 메소드가 반환하는 데이터는 (템플릿 렌더링 대신) 바로 Reponse의 Body로 작성하겠다고 명시하는 애너테이션
+
 #### Exceptions
 - @ExceptionHandler
   - 익셉션을 처리할 메소드 생성 후 상단에 @ExceptionHandler 추가
@@ -107,6 +108,8 @@ tags: [Spring]
   - 컨트롤러에서 응답 코드와 메시지로 ResponseStatusException 초기화하여 던짐
   - 프로토타이핑에 좋음
   - 글로벌하게 한번에 처리할 방법이 없으며 컨트롤러마다 에러 메시지를 작성해야 해서 중복 코드 발생
+<br>
+<br>
 
 ### References
 - [https://meetup.toast.com/posts/92](https://meetup.toast.com/posts/92)
