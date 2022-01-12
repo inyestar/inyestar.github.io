@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring Core Concepts
-tags: [Java, Spring]
+tags: [Spring]
 ---
 
 ### Spring Inversion of Control (IoC) Container
