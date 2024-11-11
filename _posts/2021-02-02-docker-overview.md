@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docker Overview
-tags: [Docker]
+categories: ["docker"]
 ---
 
 ### Hypervisor

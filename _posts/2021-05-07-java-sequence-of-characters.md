@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java Sequence of Characters
-tags: [Java]
+categories: ["java"]
 ---
 
 자바에서는 연속된 문자열을 표현하는 클래스를 아래와 같이 제공하고 있다.

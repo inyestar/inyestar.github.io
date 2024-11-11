@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kafka Concepts
-tags: [Kafka]
+categories: ["kafka", "message", "queue"]
 ---
 
 ### Prerequsites

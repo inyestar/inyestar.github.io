@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring REST API
-tags: [Spring]
+categories: ["java", "spring"]
 ---
 
 ### REST API

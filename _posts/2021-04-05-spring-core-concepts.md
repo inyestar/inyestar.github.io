@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring Core Concepts
-tags: [Spring]
+categories: ["java", "spring"]
 ---
 
 ### Spring Inversion of Control (IoC) Container
@@ -74,6 +74,6 @@ tags: [Spring]
 
 ### References
 - [https://www.dariawan.com/tutorials/spring/core-concepts-of-the-spring-framework/](https://www.dariawan.com/tutorials/spring/core-concepts-of-the-spring-framework/)
-- [https://siyoon210.tistory.com/120]{https://siyoon210.tistory.com/120}
+- [https://siyoon210.tistory.com/120](https://siyoon210.tistory.com/120)
 - [https://blog.daum.net/tomayoon/7095404](https://blog.daum.net/tomayoon/7095404)
 - [https://chanho0912.tistory.com/17](https://chanho0912.tistory.com/17)

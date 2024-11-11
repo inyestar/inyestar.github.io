@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Spring Test
-tags: [Spring]
+categories: ["java", "spring"]
 ---
 
-## How works
+### How works
 - 다음 조건을 갖고 있는 메소드가 있는 클래스를 읽는다.
   - @Test 애너테이션
   - public 접근자  ---> 확인 필요
@@ -20,5 +20,5 @@ tags: [Spring]
 - 나머지 테스트 메소드에 대해 위 세 가지 과정을 반복한다.
 
 
-## References
+### References
 - [https://goodgid.github.io/How-JUnit-Works/](https://goodgid.github.io/How-JUnit-Works/)

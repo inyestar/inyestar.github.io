@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java JVM Architecture
-tags: [Java]
+categories: ["java", "jvm"]
 ---
 
 ### Java
