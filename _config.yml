@@ -10,7 +10,7 @@ title:            Inyestar
 tagline:          'Blog'
 description:      'Beyond infinity!'
 url:              https://inyestar.github.io
-baseurl:          /
+baseurl:          https://inyestar.github.io
 
 author:
   name:           'Inyestar'
