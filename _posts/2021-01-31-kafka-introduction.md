@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kafka Introduction
-categories: ["kafka", "message"]
+categories: ["kafka", "message", "queue"]
 ---
 
 ### Event Streaming
