@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java IO
-tags: [Java]
+categories: ["java"]
 ---
 
 ### Introduction

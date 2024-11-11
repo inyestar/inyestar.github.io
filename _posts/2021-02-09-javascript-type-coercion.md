@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Javascript Type Coercion
-tags: [Javascript]
+categories: ["javascript"]
 ---
 
 ### 정의

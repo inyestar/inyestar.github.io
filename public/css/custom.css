@@ -1,0 +1,39 @@
+  .sidebar img {
+    border-radius: 0px;
+  }
+  .profile-link a {
+    display: inline-grid;
+  }
+  .list .post-title {
+    display: inline-grid;
+  }
+  .list .post-date {
+    display: inline-grid;
+    padding-left: 0.3em;
+  }
+  .label {
+    border-radius: 20px;
+    font-size: small;
+    color: #fff;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.1em;
+  }
+  .label-0 {
+    background-color: #90a959;
+  }
+  .label-1 {
+    background-color: #75b5aa;
+  }
+  .label-2 {
+    background-color: #6a9fb5;
+  }
+  .label-3 {
+    background-color: #aa759f;
+  }
+  .label-4 {
+    background-color: #8f5536;
+  }
+  .label-5 {
+    background-color: #ac4142;
+  }

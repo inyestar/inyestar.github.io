@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java Apache POI
-tags: [Java]
+categories: ["java"]
 ---
 
 ### Disclaimer

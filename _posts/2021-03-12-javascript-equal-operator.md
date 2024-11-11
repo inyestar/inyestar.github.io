@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Javascript Equal Operator
-tags: [Javascript]
+categories: ["javascript"]
 ---
 
 ### Double Equals (Loose Equality)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docker Installation On CentOS
-tags: [Docker]
+categories: ["docker"]
 ---
 
 ### Prerequisites

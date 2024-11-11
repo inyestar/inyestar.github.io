@@ -1,10 +1,10 @@
 ---
 layout: post
 title: React Overview
-tags: [React]
+categories: ["javascript", "react"]
 ---
-
-#### Concepts
+ 
+### Concepts
 - JSX : HTML과 비슷하면서도 약간의 차이가 존재하는 자바스크립트로서 (객체를 의미하는 거겠지?) HTML처럼 앱의 구조를 만들 때 사용
 - Component : 재사용이 가능하며 독립적인 성격을 가진 UI에 대한 논리적 구분
   - 한 번 선언하고 나면 HTML 처럼 사용 가능

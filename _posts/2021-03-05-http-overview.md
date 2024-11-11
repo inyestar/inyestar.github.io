@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTTP Overview
-tags: [HTTP]
+categories: ["schema", "http"]
 ---
 
 ### Http
